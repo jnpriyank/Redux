@@ -7,4 +7,12 @@ Concepts:
   Only requirement is it should have a "type" property which will have values like "Increment", "Decrement" etc. 
     It should be of Type String, because String is serealizable.
   Any data which gets into Redux application, gets there by Action.
-
+3) Redux Pure and Impure functions: Pure Functions return same value for the same Input everytime.(they are predictable)
+      They do not have any observable Side Effects like Network or Database call or change the DOM.
+      They do not modify the values passed to them.
+      functions that you are going to write in Redux have to be Pure and you have to be mindful of that.
+4) Reducer Function:
+Note: UI or View layer is more predictable when it is described as a Pure Function of the Application State.
+Reduct complements this concept with another which is
+State Mutations in your Applications must be Pure Functions.
+Means it should take Previous State, Action as Dispatcher and Return the New State Object. (should not modify the Previous State)
