@@ -1,0 +1,10 @@
+Concepts:
+1) Single Immutable State Tree: Everything that changes in our Application, whether it is the Data or UI state is contained in a Single Object. We call it State or State Tree.
+2) Describing State changes with Actions: 
+  State Tree is Read Only. 
+  Only way to change it is to dispatch an Action. 
+  Action is described in simple Javascript Object.
+  Only requirement is it should have a "type" property which will have values like "Increment", "Decrement" etc. 
+    It should be of Type String, because String is serealizable.
+  Any data which gets into Redux application, gets there by Action.
+
