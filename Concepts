@@ -16,3 +16,5 @@ Note: UI or View layer is more predictable when it is described as a Pure Functi
 Reduct complements this concept with another which is
 State Mutations in your Applications must be Pure Functions.
 Means it should take Previous State, Action as Dispatcher and Return the New State Object. (should not modify the Previous State)
+This Functions is called the Reducer.
+5) Writing a counter reducer with tests:
